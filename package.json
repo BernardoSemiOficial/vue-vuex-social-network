@@ -11,6 +11,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@lottiefiles/vue-lottie-player": "^1.0.9",
     "vue": "^2.7.7",
     "vue-router": "^3.5.4"
   },

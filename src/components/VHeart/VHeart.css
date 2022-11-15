@@ -1,0 +1,19 @@
+.vheart {
+  position: relative;
+  cursor: pointer;
+  font-style: normal;
+}
+
+.vheart .count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  font-weight: bold;
+  line-height: 1;
+  letter-spacing: 0px;
+  font-style: normal;
+}

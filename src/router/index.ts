@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import UserView from "../views/UserView.vue";
+import UserView from "../views/User/User.vue";
 
 Vue.use(VueRouter);
 
@@ -16,7 +16,7 @@ const router = new VueRouter({
     {
       path: "/favorite",
       name: "favorite",
-      component: () => import("../views/FavoriteView.vue"),
+      component: () => import("../views/Favorite/Favorite.vue"),
     },
   ],
 });

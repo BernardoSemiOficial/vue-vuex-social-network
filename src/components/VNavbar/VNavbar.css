@@ -1,0 +1,11 @@
+.vnavbar {
+}
+
+.vnavbar a {
+  margin: 0px 1rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+}

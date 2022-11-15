@@ -1,0 +1,33 @@
+li {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  border: 2px solid #333333;
+  border-radius: 8px;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 0.8rem;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+}
+
+li img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  object-position: left;
+  vertical-align: middle;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 2px #ffffff, 0px 0px 0px 4px #333333;
+}
+
+li p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+li span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
