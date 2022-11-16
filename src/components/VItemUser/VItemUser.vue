@@ -8,27 +8,32 @@
   </li>
 </template>
 
-<script>
-import { defineComponent } from "vue";
+<script lang="ts">
+import { defineComponent, PropType } from "vue";
+import { mapActions } from "vuex";
 import VHeart from "../VHeart/VHeart.vue";
+import { User } from "../../models/User";
 
 export default defineComponent({
   components: { VHeart },
   name: "VItemUser",
   props: {
     user: {
-      type: Object,
+      type: Object as PropType<User>,
       required: true,
     },
   },
   data() {
     return {
-      favorite: false,
+      favorite: this.user.favorite,
     };
   },
   methods: {
+    ...mapActions({
+      handleFavorite: "setUserFavorite",
+    }),
     handleClickHeart() {
-      this.favorite = !this.favorite;
+      this.handleFavorite(this.user);
     },
   },
 });
